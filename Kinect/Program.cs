@@ -8,15 +8,18 @@ namespace Kinect
 {
     static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
+
+        
+        private static Form balint = new Kinect.balint.Main();
+        private static Form viktor = new Kinect.viktor.Main();
+        private static Form bence = new Kinect.bence.Main();
+
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            //Application.SetCompatibleTextRenderingDefault(false);     // nem tudom milyen exception van, ha ez nincs kikommentezve
+            Application.Run( balint );
         }
     }
 }
